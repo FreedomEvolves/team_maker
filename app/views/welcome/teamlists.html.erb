@@ -1,1 +1,12 @@
-here is where we list the new teams
+<h1>Team Rosters</h1>
+<br>
+<br>
+<div>
+  <u><%=link_to "Go Again", root_path%></u>
+</div>
+<br>
+<br>
+
+<p><%@roster.each do | name, team |%>
+	<%="#{team}  #{name}"%><br>
+<%end%></p>
