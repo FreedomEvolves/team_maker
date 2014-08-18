@@ -1,8 +1,6 @@
 module WelcomeHelper
-<<<<<<< HEAD
 
-=======
->>>>>>> 0e99cd6e1cc1bb5c9cc5d7cec8532529dc118d44
+
   def roster_maker
     rand_players = []
     rand_players = @players.shuffle
@@ -30,8 +28,8 @@ module WelcomeHelper
     rand_players.each_with_index {|k,i|roster1[k] = sorted_list[i]}
     return roster1
   end
-<<<<<<< HEAD
+
 end
-=======
-end
->>>>>>> 0e99cd6e1cc1bb5c9cc5d7cec8532529dc118d44
+
+
+
