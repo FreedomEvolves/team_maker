@@ -7,8 +7,17 @@ class WelcomeController < ApplicationController
   def teamlists
    	name = params[:name]
    	teams = params[:teams]
-  	@players = Student.all
-  	@teamnames = TeamName.all
+  	@students = Student.all
+  	@teamxs = TeamName.all
+
+    @players = []
+    @students.each do |student|
+       @players.push(student.name)
+     end  
+    @teamnames = []
+    @teamxs.each do |x|
+       @teamnames.push(x.teams)
+     end  
 
  # 	def roster_maker
     rand_players = []
@@ -35,7 +44,8 @@ class WelcomeController < ApplicationController
 
     @roster = {}
     rand_players.each_with_index {|k,i|@roster[k] = sorted_list[i]}
-return @roster
+    puts @roster
+    return @roster
   end
 end
 
