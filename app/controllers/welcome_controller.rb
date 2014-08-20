@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-#include WelcomeHelper
+include WelcomeHelper
 
   def index
   end
@@ -11,13 +11,11 @@ class WelcomeController < ApplicationController
   	@teamxs = TeamName.all
 
     @players = []
-    @students.each do |student|
-       @players.push(student.name)
-     end  
+    list_maker @students, @players
+
     @teamnames = []
-    @teamxs.each do |x|
-       @teamnames.push(x.teams)
-     end  
+    team_maker @teamxs, @teamnames
+ 
 
  # 	def roster_maker
     rand_players = []
