@@ -7,6 +7,18 @@
 <br>
 <br>
 
-<p><%@roster.each do | name, team |%>
-	<%="#{team}  #{name}"%><br>
-<%end%></p>
+<table>
+  <thead>
+    <tr>
+      <th>Teams</th>
+      <th>Players</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>  	
+      <td><%@roster.each do | name, team |%>
+	     <%="#{team}: #{name}"%><br>
+      <%end%></td>
+    </tr>
+  </tbody>
+</table>
