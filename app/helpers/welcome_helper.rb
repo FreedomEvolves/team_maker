@@ -1,7 +1,18 @@
 module WelcomeHelper
+  
+def list_maker x, y
+  x.each do |student|
+  y.push(student.name)
+  end 
+end
 
+  def team_maker x, y
+  x.each do |student|
+  y.push(student.teams)
+  end 
+end  
 
-  def roster_maker
+  def roster_mker
     rand_players = []
     rand_players = @players.shuffle
 
