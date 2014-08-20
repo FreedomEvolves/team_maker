@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  root "welcome#index"
+  
+  root "welcome#index"  
 
   resources :team_names
   resources :students
+  
 
   get 'welcome/index' => 'welcome#index'
   get 'index' => 'welcome#index'
@@ -10,7 +12,7 @@ Rails.application.routes.draw do
   get 'welcome/teamlists'
   get 'teamlists' => 'welcome#teamlists'
   post 'welcome/teamlists' => 'welcome#teamlists'
-
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

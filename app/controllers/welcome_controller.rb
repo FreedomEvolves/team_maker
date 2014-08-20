@@ -4,6 +4,7 @@ include WelcomeHelper
   def index
   end
 
+end
   def teamlists
    	name = params[:name]
    	teams = params[:teams]
@@ -45,6 +46,7 @@ include WelcomeHelper
     puts @roster
     return @roster
   end
-end
+
 
  
+

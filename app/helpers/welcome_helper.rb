@@ -1,5 +1,5 @@
 module WelcomeHelper
-
+  
 def list_maker x, y
   x.each do |student|
   y.push(student.name)
@@ -39,4 +39,8 @@ end
     rand_players.each_with_index {|k,i|roster1[k] = sorted_list[i]}
     return roster1
   end
+
 end
+
+
+
