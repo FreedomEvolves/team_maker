@@ -45,6 +45,8 @@ include WelcomeHelper
     puts @roster
     return @roster
   end
+
 end
+
  
 
