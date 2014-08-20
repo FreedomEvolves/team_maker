@@ -4,7 +4,6 @@ class WelcomeController < ApplicationController
   def index
   end
 
-end
   def teamlists
    	name = params[:name]
    	teams = params[:teams]
@@ -48,7 +47,6 @@ end
     puts @roster
     return @roster
   end
-
-
+end
  
 
