@@ -3,6 +3,9 @@ include WelcomeHelper
 
   def index
   end
+  
+  def about
+  end
 
   def teamlists
    	name = params[:name]

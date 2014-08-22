@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :team_names
   resources :students
   
+  get 'welcome/about' => 'welcome#about'
+  get 'about' => 'welcome#about'
 
   get 'welcome/index' => 'welcome#index'
   get 'index' => 'welcome#index'
