@@ -1,3 +1,5 @@
 == README
 
+Created August 14, 2014 in our Tech Talent South class with kimberlyjlt.  I did the ruby code; she did the views.
+
 This app creates randomized teams of players (students) based on the input of a list of players and a set of team names.  Nothing special Rails-wise but it does involve use of a ruby program to create the player lists.  The teammaker program is in the welcome_helper.rb file.
